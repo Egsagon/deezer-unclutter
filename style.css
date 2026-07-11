@@ -1,0 +1,7 @@
+section.channel-section {
+    display: none !important;
+}
+
+section.channel-section:nth-child(1), section.channel-section:has(.css-0) {
+    display: unset !important;
+}
