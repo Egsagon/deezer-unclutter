@@ -1,7 +1,10 @@
-section.channel-section {
-    display: none !important;
-}
+/* Home tweaks */
+section.channel-section { display: none !important }
+section.channel-section:has(ul) { display: unset !important }
 
-section.channel-section:nth-child(1), section.channel-section:has(.css-0) {
-    display: unset !important;
-}
+/* Left bar tweaks */
+#dzr-app > div > div:not(.page-alerts):not(.page-loader):not(.page-topbar):not(.page-main):not(.page-player):not(.page-shadow):not([aria-hidden="true"]) > div > div:last-child > div:first-child { display: none !important }
+
+/* Queue cover tweaks */
+.queuelist-cover:hover img { opacity: 1 !important }
+.queuelist-cover img { opacity: 0 !important; transition: opacity 0.1s ease-in-out !important }
